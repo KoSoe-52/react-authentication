@@ -1,0 +1,48 @@
+{
+  "user": [
+    {
+      "username": "kosoe",
+      "password": "password",
+      "fullname": "Ko Soe",
+      "email": "kosoe@gmail.com",
+      "phone": "0957384833",
+      "country": "myanmar",
+      "address": "Thazi",
+      "gender": "male",
+      "id": 5
+    },
+    {
+      "username": "soethein",
+      "password": "password",
+      "fullname": "Soe Thein",
+      "email": "soethein@gmail.com",
+      "phone": "0938473743",
+      "country": "myanmar",
+      "address": "Thazi",
+      "gender": "male",
+      "id": 6
+    },
+    {
+      "username": "hlahlaaye",
+      "password": "password",
+      "fullname": "Hla Hla Aye",
+      "email": "hlahlaaye@gmail.com",
+      "phone": "0938488283",
+      "country": "singapore",
+      "address": "Nay Pyi Taw",
+      "gender": "female",
+      "id": 7
+    },
+    {
+      "username": "happy",
+      "password": "password",
+      "fullname": "happy",
+      "email": "happy@gmail.com",
+      "phone": "0984848",
+      "country": "",
+      "address": "thazi",
+      "gender": "male",
+      "id": 8
+    }
+  ]
+}
