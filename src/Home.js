@@ -6,11 +6,7 @@ const Home = () => {
     const navigate = useNavigate();
     const [users,setusers] = useState([]);
     useEffect(()=>{
-        let username = sessionStorage.getItem("username");
-        if(username ==='' || username ===null)
-        {
-            navigate("/login");
-        }
+        
         fetch("http://localhost:8000/user").then((res) => {
             return res.json();
         }).then((res)=>{
@@ -21,10 +17,9 @@ const Home = () => {
     },[]);
     return ( 
         <div>
-            <h1>Registration Lists</h1>
-            <Link to={"/"}>Home |</Link>
-            <Link to={"/login"}>Logout</Link>
-            <table className="table table-striped">
+            <h1>Home Page</h1>
+            
+            {/* <table className="table table-striped">
                 <thead>
                     <tr>
                         <th>#</th>
@@ -50,7 +45,7 @@ const Home = () => {
                             ))
                         }
                 </tbody>
-            </table>
+            </table> */}
         </div>
      );
 }

@@ -12,7 +12,7 @@ const Login = () => {
          * form validation is passed
          */
         if(isValidate())
-        {
+        {  
             fetch("http://localhost:8000/user/?username=" + username).then((res) =>{
                 return res.json();
             }).then((resp) => {
@@ -26,6 +26,7 @@ const Login = () => {
                     {
                         toast.success("Success");
                         sessionStorage.setItem("username",username);
+                        sessionStorage.setItem("userrole",resp[0].role);
                         navigate("/");
                     }else
                     {
