@@ -12,7 +12,9 @@ function App() {
     <div className="App">
         <ToastContainer theme='dark'></ToastContainer>
         <BrowserRouter>
+          {/** app header for ui show */}
           <AppHeader></AppHeader>
+          {/** routes for frontend */}
           <Routes>
               <Route path="/" element={<Home />}></Route>
               <Route path="/customer" element={<Customer />}></Route>

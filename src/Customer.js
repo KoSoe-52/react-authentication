@@ -24,7 +24,7 @@ const Customer = () => {
             if(!res.ok)
             {
                 navigate("/");
-                toast.warning("You have not authorized to access customer page");
+                toast.warning("You have not authorized to access customer page!");
             }
             return res.json();
         }).then((resp) => {

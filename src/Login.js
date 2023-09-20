@@ -14,14 +14,20 @@ const Login = () => {
         if(isValidate())
         {  
             fetch("http://localhost:8000/user/?username=" + username).then((res) =>{
+                if(!res.ok)
+                {
+                    console.log("Error");
+                    return false;
+                }
                 return res.json();
             }).then((resp) => {
-                console.log(resp);
+                //console.log(resp);
                 if(Object.keys(resp).length === 0)
                 {
                     toast.warning("Please enter valid username");
                 }else
                 {
+                    console.log(resp[0]);
                     if(resp[0].password === password)
                     {
                         toast.success("Success");
@@ -36,6 +42,9 @@ const Login = () => {
             }).catch((err)=>{
                 toast.error("Failed in "+err.message);
             });
+        }else
+        {
+            toast.warning("Please enter username and password");
         }
     }
     const isValidate = (e) => {
@@ -45,13 +54,14 @@ const Login = () => {
             isproceed = false;
             toast.warning("Please enter valid username");
         }
-        if(password ==='' || password ===null)
+        if(password === '' || password ===null)
         {
             isproceed = false;
             toast.warning("Please enter valid password");
         }
         return isproceed;
     }
+    //login page ရောက်လာရင် sessionStorage တွေကို clear လုပ်ပစ်သည်
     useEffect(()=>{
         sessionStorage.clear();
     })
@@ -68,7 +78,7 @@ const Login = () => {
                                 <div className="row">
                                     <div className="form-group">
                                         <label>Username</label>
-                                        <input className="form-control" onChange={(e) => setusername(e.target.value)}></input>
+                                        <input className="form-control" onChange={(e)=>setusername(e.target.value)}></input>
                                     </div>
                                     <div className="form-group">
                                         <label>Password</label>

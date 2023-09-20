@@ -9,7 +9,7 @@
       "country": "myanmar",
       "address": "Thazi",
       "gender": "male",
-      "role":"admin",
+      "role": "admin",
       "id": 5
     },
     {
@@ -21,7 +21,7 @@
       "country": "myanmar",
       "address": "Thazi",
       "gender": "male",
-      "role":"admin",
+      "role": "admin",
       "id": 6
     },
     {
@@ -33,7 +33,7 @@
       "country": "singapore",
       "address": "Nay Pyi Taw",
       "gender": "female",
-      "role":"user1",
+      "role": "user1",
       "id": 7
     },
     {
@@ -45,70 +45,82 @@
       "country": "",
       "address": "thazi",
       "gender": "male",
-      "role":"user",
+      "role": "user",
       "id": 8
+    },
+    {
+      "username": "lucky",
+      "password": "password",
+      "fullname": "Lucky",
+      "email": "lucky@gmail.com",
+      "phone": "096847473",
+      "country": "myanmar",
+      "address": "ThaZi",
+      "gender": "male",
+      "role": "admin",
+      "id": 9
     }
   ],
-  "roleaccess":[
+  "roleaccess": [
     {
-      "role":"admin",
-      "menu":"customer",
-      "haveadd":true,
-      "haveedit":true,
-      "haveremove":true
+      "role": "admin",
+      "menu": "customer",
+      "haveadd": true,
+      "haveedit": true,
+      "haveremove": true
     },
     {
-      "role":"admin",
-      "menu":"supplier",
-      "haveadd":true,
-      "haveedit":true,
-      "haveremove":true
+      "role": "admin",
+      "menu": "supplier",
+      "haveadd": true,
+      "haveedit": true,
+      "haveremove": true
     },
     {
-      "role":"user",
-      "menu":"customer",
-      "haveadd":true,
-      "haveedit":false,
-      "haveremove":false
+      "role": "user",
+      "menu": "customer",
+      "haveadd": true,
+      "haveedit": false,
+      "haveremove": false
     },
     {
-      "role":"user1",
-      "menu":"customer",
-      "haveadd":false,
-      "haveedit":false,
-      "haveremove":false
+      "role": "user1",
+      "menu": "customer",
+      "haveadd": false,
+      "haveedit": false,
+      "haveremove": false
     }
   ],
-  "customer":[
+  "customer": [
     {
-      "id":1,
-      "name" : "မျိုးကျော်သူ",
+      "id": 1,
+      "name": "မျိုးကျော်သူ",
       "email": "myokyawthu@gmail.com",
-      "phone":"0938488283"
+      "phone": "0938488283"
     },
     {
-      "id":2,
-      "name" : "မိုးသူအောင်",
+      "id": 2,
+      "name": "မိုးသူအောင်",
       "email": "moethuaung@gmail.com",
-      "phone":"09447734"
+      "phone": "09447734"
     },
     {
-      "id":3,
-      "name" : "အောင်အောင်ထက်",
+      "id": 3,
+      "name": "အောင်အောင်ထက်",
       "email": "aungaunghtet@gmail.com",
-      "phone":"09374774"
+      "phone": "09374774"
     },
     {
-      "id":4,
-      "name" : "Htut Naung",
+      "id": 4,
+      "name": "Htut Naung",
       "email": "htutnaung@gmail.com",
-      "phone":"09484734"
+      "phone": "09484734"
     },
     {
-      "id":5,
-      "name" : "Ye Chit Paing",
+      "id": 5,
+      "name": "Ye Chit Paing",
       "email": "yechitpaing@gmail.com",
-      "phone":"094734373"
+      "phone": "094734373"
     }
   ]
 }
