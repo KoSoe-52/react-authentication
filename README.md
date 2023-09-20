@@ -9,3 +9,4 @@ npx json-server --watch db.json --port 8000
 json server is the fake api to demostrate.
 
 npm start
+https://www.youtube.com/watch?v=1B1vFk1RkjI
